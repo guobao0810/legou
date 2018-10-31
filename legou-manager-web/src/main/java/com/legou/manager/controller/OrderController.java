@@ -19,7 +19,8 @@ public class OrderController {
     private OrderService orderService;
 
     @RequestMapping(value = "/list",method = RequestMethod.GET)
-    public DataTablesResult getOrderList(int draw, int start, int length, int cid, @RequestParam("search[value]") String search,
+    public DataTablesResult getOrderList(int draw, int start, int length,
+                                         @RequestParam(required = false) Integer cid, @RequestParam("search[value]") String search,
                                          @RequestParam("order[0][column]") int orderCol, @RequestParam("order[0][dir]") String orderDir,
                                          String searchItem, String minDate, String maxDate){
         //获取客户端需要排序的列
