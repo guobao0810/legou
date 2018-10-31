@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="legou-manager-web:war">
+    <output-path>$PROJECT_DIR$/legou-manager-web/target</output-path>
+    <root id="archive" name="legou-manager-web-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="legou-manager-web:war exploded" />
+    </root>
+  </artifact>
+</component>

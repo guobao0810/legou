@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/legou-manager.iml" filepath="$PROJECT_DIR$/legou-manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/legou-manager-dao/legou-manager-dao.iml" filepath="$PROJECT_DIR$/legou-manager-dao/legou-manager-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/legou-manager-interface/legou-manager-interface.iml" filepath="$PROJECT_DIR$/legou-manager-interface/legou-manager-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/legou-manager-pojo/legou-manager-pojo.iml" filepath="$PROJECT_DIR$/legou-manager-pojo/legou-manager-pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/legou-manager-service/legou-manager-service.iml" filepath="$PROJECT_DIR$/legou-manager-service/legou-manager-service.iml" />
+    </modules>
+  </component>
+</project>
