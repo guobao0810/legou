@@ -17,14 +17,14 @@ public class ResultUtil<T> {
 
     public Result<T> setData(T t){
         this.result.setCode(200);
-        this.result.setData(t);
+        this.result.setResult(t);
         return this.result;
     }
 
 
     public Result<T> setData(T t,String message){
         this.result.setCode(200);
-        this.result.setData(t);
+        this.result.setResult(t);
         this.result.setMessage(message);
         return this.result;
     }

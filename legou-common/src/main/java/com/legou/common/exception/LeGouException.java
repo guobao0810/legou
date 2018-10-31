@@ -10,6 +10,7 @@ public class LeGouException extends RuntimeException {
 
     public LeGouException(String msg){
         super();
+        System.out.print(msg+"报错");
         this.msg = msg;
     }
 

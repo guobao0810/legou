@@ -174,6 +174,7 @@
                     layer.alert(data.message,{title: '错误信息',icon: 2});
                     return;
                 }
+                alert(data.result);
                 $("#num").html(data.result);
             },
             error:function(XMLHttpRequest){

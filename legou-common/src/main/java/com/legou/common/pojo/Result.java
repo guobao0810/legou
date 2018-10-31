@@ -32,7 +32,7 @@ public class Result<T> implements Serializable {
     /**
      * 响应数据
      */
-    private T data;
+    private T result;
 
     public boolean isSuccess() {
         return success;
@@ -66,11 +66,11 @@ public class Result<T> implements Serializable {
         this.timestamp = timestamp;
     }
 
-    public T getData() {
-        return data;
+    public T getResult() {
+        return result;
     }
 
-    public void setData(T data) {
-        this.data = data;
+    public void setResult(T result) {
+        this.result = result;
     }
 }
