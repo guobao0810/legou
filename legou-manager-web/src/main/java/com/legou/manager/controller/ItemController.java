@@ -1,7 +1,9 @@
 package com.legou.manager.controller;
 
 import com.legou.common.pojo.DataTablesResult;
+import com.legou.common.pojo.Result;
 import com.legou.common.utils.ResultUtil;
+import com.legou.manager.dto.ItemDto;
 import com.legou.manager.pojo.TbItem;
 import com.legou.manager.service.ItemService;
 import io.swagger.annotations.ApiOperation;
@@ -116,6 +118,15 @@ public class ItemController {
         return new ResultUtil<TbItem>().setData(item);
     }*/
 
+
+   @RequestMapping(value = "/add",method = RequestMethod.POST)
+   public Result<Object> itemAdd(ItemDto itemDto){
+       if(this.itemService.itemAdd(itemDto) == 1){
+           return new ResultUtil<Object>().setData(null);
+       }else{
+           return new ResultUtil<Object>().setErrorMsg("不好意思，商品添加失败!!!");
+       }
+   }
 
 
 }

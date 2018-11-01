@@ -1,6 +1,7 @@
 package com.legou.manager.service;
 
 import com.legou.common.pojo.DataTablesResult;
+import com.legou.manager.dto.ItemDto;
 import com.legou.manager.pojo.TbItem;
 
 import java.util.List;
@@ -21,4 +22,7 @@ public interface ItemService {
     List<TbItem> list();
 
     DataTablesResult getItemCount();
+
+    int itemAdd(ItemDto itemDto);
+
 }
