@@ -1,6 +1,8 @@
 package com.legou.manager.dto;
 
+import com.legou.common.pojo.ZTreeNode;
 import com.legou.manager.pojo.TbItem;
+import com.legou.manager.pojo.TbItemCat;
 import com.legou.manager.pojo.TbItemDesc;
 
 import java.util.Date;
@@ -29,6 +31,18 @@ public class DtoUtils {
         tbItemDesc.setCreated(new Date());
         tbItemDesc.setUpdated(new Date());
         return tbItemDesc;
+    }
+
+    public static ZTreeNode itemCatToZTreeNode(TbItemCat tbItemCat){
+        ZTreeNode zTreeNode = new ZTreeNode();
+        zTreeNode.setId(tbItemCat.getId());
+        zTreeNode.setpId(tbItemCat.getParentId());
+        zTreeNode.setStatus(tbItemCat.getStatus());
+        zTreeNode.setRemark(tbItemCat.getRemark());
+        zTreeNode.setName(tbItemCat.getName());
+        zTreeNode.setParent(tbItemCat.getIsParent());
+        zTreeNode.setSortOrder(tbItemCat.getSortOrder());
+        return zTreeNode;
     }
 
 }
